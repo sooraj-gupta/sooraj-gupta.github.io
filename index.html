@@ -17,8 +17,8 @@
     </head>
     
     
-    <body>
-        <div>
+    <body onload = "typingOnLoad();" >
+        <div >
             <center style = "padding: 0; margin: 0;">
                 <div class="topnav">
                     <img id = "themebutton" src = "assets/darkmode.png" onclick="adjustTheme()"></img>
@@ -36,7 +36,7 @@
                     
                     <div data-aos = "fade-up" style = "background-color: rgba(255,255,255,0)">
                         <div id = "titlecontainer" style = "" >
-                            <h1 class = "typewriter" id = "title"></h1>
+                            <h1 class = "typewriter" id = "title">Sooraj Gupta's</h1>
                         </div>
                     </div>
                 </div>
@@ -149,10 +149,11 @@
                     <br>
                     <br>
                     <br>
-                    <p class = "font small">The 3D CAD Model</p>
+                    <a id = "loadcad" class = button onclick = "loadCad();">Load 3D CAD Model</a>
                     <br>
                     <br>
-                    <iframe src = "https://a360.co/3iG7QLU" style = "max-width: 1000px; width: 90vw; height: 90vh "></iframe>
+                    <br>
+                    <iframe id = "cad" src = "" style = "display:none; max-width: 1000px; width: 90vw; height: 0px "></iframe>
                     
                     <br>
                 </div>

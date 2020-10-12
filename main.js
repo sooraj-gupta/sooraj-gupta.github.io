@@ -5,6 +5,27 @@ document.cookie = "theme=light";
 
 var thanks = false;
 
+function typingOnLoad(){
+    if( window.innerWidth < 700 )
+    {
+        typingObjects[0].fontSize = 45;    
+        document.getElementById(typingObjects[0].id).style.height = "60px";
+    }
+    
+    for(var i = 0; i < typingObjects.length; i++ )
+    {
+        
+        typing( typingObjects[i]);        
+    }
+}
+
+function loadCad()
+{
+    document.getElementById( "cad" ).style.display = "initial";
+    document.getElementById( "cad" ).style.height = "90vh";
+    document.getElementById( "loadcad" ).style.display = "none";
+    document.getElementById( "cad" ).setAttribute("src", "https://a360.co/3iG7QLU");
+}
 
 var typingObjects = [
         {
@@ -50,18 +71,6 @@ window.onload = function()
     
     setTheme();
     console.log(thankyou);
-    
-    if( window.innerWidth < 700 )
-    {
-        typingObjects[0].fontSize = 45;    
-        document.getElementById(typingObjects[0].id).style.height = "60px";
-    }
-    
-    for(var i = 0; i < typingObjects.length; i++ )
-    {
-        
-        typing( typingObjects[i]);        
-    }
     //console.log("titleStage: "+ titleStage);
     
 }
