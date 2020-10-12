@@ -1,0 +1,17 @@
+:root {
+    --text: #000;
+    --bg: #fffb90; 
+    --shadow: #44444455;
+    --background: #fffcb4
+}
+
+.topnav {
+  background-color: #fffb9099; 
+}
+.topnav a{
+    color: #999;
+}
+
+a{
+    color: #078379;
+}

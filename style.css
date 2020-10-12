@@ -1,0 +1,276 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap";
+/* Change the color of links on hover */
+/* Add a color to the active/current link */
+@keyframes blink-cursor {
+  0% {
+    border-color: var(--bg); }
+  50% {
+    border-color: var(--text); }
+  100% {
+    border-color: var(--bg); } }
+@keyframes typing {
+  0% {
+    width: 100%; }
+  15% {
+    width: 0%; }
+  40% {
+    width: 100%; }
+  100% {
+    width: 100%; }
+}
+@keyframes bounce {
+  0% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(0px, 10px); }
+  100% {
+    transform: translate(0, 0); } }
+
+body {
+  transition: 1s;
+  letter-spacing: 1px;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  cursor: auto;
+  scroll-behavior: smooth;
+  transition: all 1s; }
+
+html {
+  transition: 1s;
+  letter-spacing: 1px;
+  font-family: 'Roboto Mono';
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  cursor: url("pointer.png"), auto;
+  scroll-behavior: smooth;
+  /*transition: all 1s; */
+}
+
+.typewriter {
+  font-family: 'Roboto Mono';
+  color:var(--text);
+  height: 80px;
+  font-size: 60px;
+  font-weight: 100;
+  overflow: hidden;
+  margin: 30px auto;
+  border-right: 2px solid var(--text);
+  white-space: nowrap;
+  background-color: rgba(255,255,255,0);
+  /*animation: blink-cursor 1s step-end infinite, typing 5s steps(5, end) infinite;*/ }
+
+
+.topnav {
+  font-family: 'Roboto Mono';
+  border: none;
+  padding: 0px 0px;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: 1s; }
+
+  .topnav a {
+      
+    float: right;
+    text-align: center;
+    padding: 20px 20px;
+    margin: 1px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 300;
+    border: none;
+    transition: 1s; }
+
+    .topnav a:hover {
+      color: var(--text);
+      cursor: pointer;
+      transition: 1s; }
+
+  .topnav img {
+    float: right;
+    text-align: center;
+    padding: 20px 20px;
+    margin: 1px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 300;
+    border: none;
+    transition: 1s; }
+  .topnav a.active {
+    color: var(--text);
+    transition: 1s; }
+
+#themebutton {
+  width: 25px;
+  height: 25px;
+  border: none;
+  transition: 1s; }
+  #themebutton:hover {
+    cursor: pointer;
+    transition: 1s; }
+
+div {
+  background-color: var(--bg);
+  transition: 1s; }
+
+.button {
+    font-family: 'Roboto Mono';
+  box-shadow: -2px 4px 8px var(--shadow);
+  padding: 10px 12px;
+  text-decoration: none;
+  color: var(--text);
+  transition: 1s; 
+  overflow: hidden;
+}
+.button .arrow{
+    position: relative;
+    transition: 1s;
+}
+.button:hover {
+    transition: 1s;;
+    cursor: pointer;
+    box-shadow: none; 
+}
+.button:hover .arrow{
+    padding-right: 15px;
+}
+.button .arrow:after{
+  content: " > ";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  color:var(--text);
+  transition: 1s;
+}
+.button:hover .arrow:after{
+    right:0;
+  opacity: 1;
+  transition: 1;
+}
+  .button:active {
+    background-color: var(--text);
+    color: var(--bg); }
+
+
+.big {
+  font-size: 40px; 
+}
+
+.giant {
+  font-size: 60px; 
+}
+
+.font {
+  color: var(--text);
+  transition: 1s; 
+  margin: 0px 2px;
+  word-wrap: break-word
+}
+
+.small{
+    font-size: 18px;
+}
+hr{
+    transition:1s;
+    max-width: 50vw; 
+    box-shadow: none;
+    border-color: var(--text);
+}
+
+.image {
+  border: 5px solid var(--text);
+  transition: 1s;
+  box-shadow: -5px 6px 40px var( --shadow ); }
+
+.footer {
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  color: var(--text);
+  transition: 1s; }
+
+#top {
+  animation: bounce 1s infinite; }
+
+.form {
+  box-shadow: -2px 4px 8px var(--shadow);
+  width: 80vw;
+  max-width: 350px;
+  padding: 40px 0px;
+  padding-top: 30px;
+  transition: 0.0s; }
+  .form div label {
+    font-size: 15px; }
+  .form > div {
+    transition: 0.0s; }
+
+input[type=text] {
+  border: none;
+  border-bottom: 1px solid var(--text);
+  font-family: 'Roboto Mono';
+  font-size: 18px;
+  font-weight: 100;
+  transition: 1s; }
+
+input:focus {
+  outline: none;
+  transition: 1s; }
+  input:focus::-webkit-input-placeholder {
+    opacity: 1; }
+
+input[type=submit] {
+  border: none;
+  font-family: 'Roboto Mono';
+  font-size: 20px;
+  font-weight: 100;
+  background-color: var(--bg);
+  transition: 1s; }
+
+button {
+  border: none;
+  font-family: 'Roboto Mono';
+  font-size: 20px;
+  font-weight: 100;
+  background-color: var(--bg);
+  transition: 1s; }
+
+.field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+p{
+    max-width: 650px;
+    padding: 0px 10vw;
+}
+
+@media (max-width: 800px)
+{
+    .big{
+        font-weight: 300;
+        font-size: 25px;   
+        padding: 0px 20px;
+    }
+    .giant {
+        font-size: 35px; 
+        padding: 0px 15px;
+    }
+
+}

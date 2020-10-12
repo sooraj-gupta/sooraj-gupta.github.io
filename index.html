@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sooraj Gupta</title>
+        
+        <link rel = "stylesheet" href = "scroll/scroll.css">
+        <link rel = "stylesheet" href = "style.css">
+        <link id = "theme" rel = "stylesheet" href = "light.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Sooraj Gupta">
+        <meta property="og:description" content="A template website with animation">
+        <meta property="og:image" content="https://wallpapercave.com/wp/wp4490728.jpg">
+        <meta property="og:url" content="https://sooraj-gupta.github.io/animationtemplate/index.html">
+        <meta name="twitter:card" content="summary_large_image">
+        <script src = "main.js"></script>
+    </head>
+    
+    
+    <body>
+        <div>
+            <center style = "padding: 0; margin: 0;">
+                <div class="topnav">
+                    <img id = "themebutton" src = "assets/darkmode.png" onclick="adjustTheme()"></img>
+                    <!--<a class = "" onclick = "goTo('form.html')">Form</a>-->
+                    <a class= "active" onclick = "goTo('index.html')">Home</a>
+                </div>
+                <div  id = "background" style = " position: fixed;height:100vh; width:100%; background-color: var(--background); z-index: 1; display:flex; justify-content: center; align-items: center;">
+                    <div style = "background-color: rgba(255,255,255,0)">
+                        <a class = "button arrow" href = "https://github.com/sooraj-gupta/sooraj-gupta.github.io"><span class = "arrow">View On GitHub</span></a>
+                        <br> 
+                        <br>
+                        <a class = "button" ><span class = "arrow">GitHub Profile</span></a></div>
+                    </div>
+                <div  id = "main"style = "z-index: 100; position: relative; height:100vh; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; transition: 1s;">
+                    
+                    <div data-aos = "fade-up" style = "background-color: rgba(255,255,255,0)">
+                        <div id = "titlecontainer" style = "" >
+                            <h1 class = "typewriter" id = "title"></h1>
+                        </div>
+                    </div>
+                </div>
+            <div style = "height: 100vh; background-color: rgba(255,255,255,0);position: relative; z-index: 0">
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style = "z-index:100;  position: relative; padding-top: 100px;">
+
+                <div data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" style = " background-color: transparent  ">
+                    <a style = " background-color: transparent; transition: 1s; box-shadow: -6px 8px 20px var(--shadow); padding: 15px 25px" class = "giant font">Robotic Arm and Car</a>
+                </div>
+                
+                <div style = "margin: 100px 0;"></div>
+                <img src = "assets/robotcar.png" width = 70% data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" class = "image" style = "transition:1s; max-width: 850px; border:0px solid black;">
+
+                <div style = "margin: 100px 0;"></div>
+                
+                
+
+                <div data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="300" style = "transition:1s;">
+
+                    <a class = "big font" style = "transition:1s;"> Java Script Joystick </a><br>
+                    
+                    <br>
+                    <p class = "font small">We created a robot called “EvoCar” which is a 3D Printed Arduino and Raspberry Pi controlled car with a 6 servo robotic arm on top. In order to control the car we had created a webpage with buttons, up, down, left, right, and stop. But, clicking the buttons repeatedly, was getting very tedious. To solve this problem we created a <a href = "https://sooraj-gupta.github.io/joystick/joystick.html">joystick</a>.</p>
+                    <br>
+
+                    <img src = "https://media.giphy.com/media/elOlaXT9KR8y8YAYhE/giphy.gif" width = 70% data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" class = "image" style = "transition:1s; max-width: 450px;">
+                    <br>
+                    <br>
+                    
+                    <p class = "font small" data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200"> This joystick allows us to set/increase/decrease to any speed within range for both the X and Y axes simultaneously. The webpage can be used to send a left speed and right speed for the car. The calculation for these speeds is adding/subtracting the X value to/from the Y value. The adding or subtracting is based on which way the X axis is moved, left or right of the center. (July 19, 2020) </p>
+                </div>
+                <div style = "margin: 100px 0;"></div>
+                
+                <div data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" style = "transition:1s;">
+
+                    <a class = "big font" style = "transition:1s;"> Java Script Sliders </a><br>
+                    
+                    <br>
+                    <p class = "font small">Another issue that came up with EvoCar was the means to controlled the arm and each of its servos. In order to do this, I created a <a href = "https://sooraj-gupta.github.io/armsliders/">webpage for sliders</a> purely in JavaScript for each servo and its position.</p>
+                    <br>
+
+                    <img src = "https://media.giphy.com/media/jqFB0qmqX7vIBW1loC/giphy.gif" width = 70% data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" class = "image" style = "transition:1s; max-width: 450px;">
+                    
+                    <p class = "font small" data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="100">Each slider ranges from 0 to 180. This webpage can be used to move each servo to a position within 0 to 180 degrees. (August 12, 2020)</p>
+                </div>
+                <p style = "height: 100px; "></p>
+
+                <div style = "margin: 100px 0;"></div>
+                
+                <div data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" style = " background-color: transparent  ">
+                    <a style = " background-color: transparent; transition: 1s; box-shadow: -6px 8px 20px var(--shadow); padding: 15px 25px" class = "giant font">Web Designing</a>
+                </div>
+                <div style = "margin: 100px 0;"></div>
+                
+                
+
+                <div data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="300" style = "transition:1s;">
+
+                    <a class = "big font" style = "transition:1s;">Cooking Website</a><br>
+                    
+                    <br>
+                    <p class = "font small">Multi-Page Website using HTML, CSS and a bit of JavaScript. Includes media queries so that it can be compatible with smaller screens such as mobile devices. (May 25, 2020)</p>
+                    <br>
+
+                    <iframe src = "https://sooraj-gupta.github.io/cooking" style = "max-width: 1000px; width: 90vw; height: 90vh "></iframe>
+                    <br>
+                    <br>
+                </div>
+                
+                <div style = "margin: 100px 0;"></div>
+
+                <div data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="300" style = "transition:1s;">
+
+                    <a class = "big font" style = "transition:1s;">Template Website</a><br>
+                    
+                    <br>
+                    <p class = "font small">A simplistic and minimal modern style template website. This blog was made using the template website. Also includes a styled form with a "thank you" message once submitted. Includes a dark/light mode option (October 1, 2020)</p>
+                    <br>
+
+                    <iframe src = "https://sooraj-gupta.github.io/animationtemplate" style = "max-width: 1000px; width: 90vw; height: 90vh "></iframe>
+                    <br>
+                    <br>
+                </div>
+                
+                <p style = "height: 100px; "></p>
+
+                <div style = "margin: 100px 0;"></div>
+                
+                <div data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" style = " background-color: transparent  ">
+                    <a style = " background-color: transparent; transition: 1s; box-shadow: -6px 8px 20px var(--shadow); padding: 15px 25px" class = "giant font">COVID-19 Safety</a>
+                </div>
+                <div style = "margin: 100px 0;"></div>
+                
+                <div data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="300" style = "transition:1s;">
+
+                    <a class = "big font" style = "transition:1s;">Hands-Free Hand Sanitizer Dispenser</a><br>
+                    
+                    <br>
+                    <p class = "font small">One of the main concerns of COVID-19 or any virus in general is the spread through surfaces that many people touch. Everyone always says, “use hand sanitizer” to try to lower the chances for any spread. However, in the majority of places such as doctor’s offices, schools, and even homes, the only type of hand sanitizer dispenser are the ones where you must press the top of the bottle with your hand in order to squeeze out the liquid, which defeats the purpose of “sanitizing.” Although there are many hands free dispensers with motion sensors, they can be expensive and harder to buy multiple. I designed a 3D printed foot operated dispenser using Fusion 360, with the additional parts only being a PVC pipe and a string. (July 27, 2020)</p>
+                    <br>
+                    <img src = "https://media.giphy.com/media/L3X6DhAv4j5vqXxwsF/giphy.gif" width = 80% data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" class = "image" style = "transition:1s; max-width: 300px;">
+                    
+                    <br>
+                    <br>
+                    <br>
+                    <p class = "font small">The 3D CAD Model</p>
+                    <br>
+                    <br>
+                    <iframe src = "https://a360.co/3iG7QLU" style = "max-width: 1000px; width: 90vw; height: 90vh "></iframe>
+                    
+                    <br>
+                </div>
+                
+                
+
+                <div class = "footer">
+                    <div style="display: flex; flex-wrap: wrap; width:400px; justify-content: center; ">
+                        <div>
+                            <a id = "top" class = "button" style = "font-size: 25px; border-radius: 100px; padding: 5px 12px; padding-bottom: 0px; padding-top: 8px; height: 33px;" href = "#main">&#708;</a>
+
+                            <div id = "creditcontainer" style = "background-color: rgba(255,255,255,0)">
+                                <h1 style="font-size: 20px; height: 25px;" id = "credit" class = "typewriter">
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </center>
+        </div>
+
+    
+        
+        <script src = "scroll/scroll.js"></script>
+    </body>
+
+</html>
