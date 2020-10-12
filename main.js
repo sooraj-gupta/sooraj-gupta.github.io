@@ -6,10 +6,10 @@ document.cookie = "theme=light";
 var thanks = false;
 
 function typingOnLoad(){
+    onLoad();
     if( window.innerWidth < 700 )
     {
-        typingObjects[0].fontSize = 45;    
-        document.getElementById(typingObjects[0].id).style.height = "60px";
+        typingObjects[0].fontSize = 40;    
     }
     
     for(var i = 0; i < typingObjects.length; i++ )
@@ -20,6 +20,7 @@ function typingOnLoad(){
 }
 
 function loadFiles(){
+    onLoad();
     var toLoad = document.getElementsByClassName( "toload" );
     for ( var i = 0; i < toLoad.length; i++)
     {
@@ -58,7 +59,7 @@ var typingObjects = [
         }
 ]
 
-window.onload = function()
+function onLoad()
 {
     thanks = false;
     const query = window.location.search;

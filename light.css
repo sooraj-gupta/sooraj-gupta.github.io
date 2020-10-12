@@ -1,12 +1,12 @@
 :root {
     --text: #000;
-    --bg: #fffb90; 
-    --shadow: #44444455;
-    --background: #fffcb4
+    --bg: #ffffc8; 
+    --shadow: #44454255;
+    --background: #fffee7
 }
 
 .topnav {
-  background-color: #fffb9099; 
+  background-color: #ffffc899; 
 }
 .topnav a{
     color: #999;
