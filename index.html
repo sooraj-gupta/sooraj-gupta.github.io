@@ -17,8 +17,8 @@
     </head>
     
     
-    <body onload = "typingOnLoad();" >
-        <div >
+    <body onload = "loadFiles(); typingOnLoad(); ">
+        <div>
             <center style = "padding: 0; margin: 0;">
                 <div class="topnav">
                     <img id = "themebutton" src = "assets/darkmode.png" onclick="adjustTheme()"></img>
@@ -55,7 +55,7 @@
                 </div>
                 
                 <div style = "margin: 100px 0;"></div>
-                <img src = "assets/robotcar.png" width = 70% data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" class = "image" style = "transition:1s; max-width: 850px; border:0px solid black;">
+                <img id = "assets/robotcar.png" src = "" width = 70% data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" class = "toload image" style = "transition:1s; max-width: 850px; border:0px solid black;">
 
                 <div style = "margin: 100px 0;"></div>
                 
@@ -69,7 +69,7 @@
                     <p class = "font small">We created a robot called “EvoCar” which is a 3D Printed Arduino and Raspberry Pi controlled car with a 6 servo robotic arm on top. In order to control the car we had created a webpage with buttons, up, down, left, right, and stop. But, clicking the buttons repeatedly, was getting very tedious. To solve this problem we created a <a href = "https://sooraj-gupta.github.io/joystick/joystick.html">joystick</a>.</p>
                     <br>
 
-                    <img src = "https://media.giphy.com/media/elOlaXT9KR8y8YAYhE/giphy.gif" width = 70% data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" class = "image" style = "transition:1s; max-width: 450px;">
+                    <img id = "https://media.giphy.com/media/elOlaXT9KR8y8YAYhE/giphy.gif" src = "" width = 70% data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" class = "toload image" style = "transition:1s; max-width: 450px;">
                     <br>
                     <br>
                     
@@ -85,7 +85,7 @@
                     <p class = "font small">Another issue that came up with EvoCar was the means to controlled the arm and each of its servos. In order to do this, I created a <a href = "https://sooraj-gupta.github.io/armsliders/">webpage for sliders</a> purely in JavaScript for each servo and its position.</p>
                     <br>
 
-                    <img src = "https://media.giphy.com/media/jqFB0qmqX7vIBW1loC/giphy.gif" width = 70% data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" class = "image" style = "transition:1s; max-width: 450px;">
+                    <img id = "https://media.giphy.com/media/jqFB0qmqX7vIBW1loC/giphy.gif" src = "" width = 70% data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" class = "toload image" style = "transition:1s; max-width: 450px;">
                     
                     <p class = "font small" data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="100">Each slider ranges from 0 to 180. This webpage can be used to move each servo to a position within 0 to 180 degrees. (August 12, 2020)</p>
                 </div>
@@ -108,7 +108,7 @@
                     <p class = "font small">Multi-Page Website using HTML, CSS and a bit of JavaScript. Includes media queries so that it can be compatible with smaller screens such as mobile devices. (May 25, 2020)</p>
                     <br>
 
-                    <iframe src = "https://sooraj-gupta.github.io/cooking" style = "max-width: 1000px; width: 90vw; height: 90vh "></iframe>
+                    <iframe id = "https://sooraj-gupta.github.io/cooking" src = "" style = "max-width: 1000px; width: 90vw; height: 90vh " class = "toload"></iframe>
                     <br>
                     <br>
                 </div>
@@ -123,7 +123,7 @@
                     <p class = "font small">A simplistic and minimal modern style template website. This blog was made using the template website. Also includes a styled form with a "thank you" message once submitted. Includes a dark/light mode option (October 1, 2020)</p>
                     <br>
 
-                    <iframe src = "https://sooraj-gupta.github.io/animationtemplate" style = "max-width: 1000px; width: 90vw; height: 90vh "></iframe>
+                    <iframe id = "https://sooraj-gupta.github.io/animationtemplate" src = "" style = "max-width: 1000px; width: 90vw; height: 90vh " class = "toload"></iframe>
                     <br>
                     <br>
                 </div>
@@ -144,7 +144,7 @@
                     <br>
                     <p class = "font small">One of the main concerns of COVID-19 or any virus in general is the spread through surfaces that many people touch. Everyone always says, “use hand sanitizer” to try to lower the chances for any spread. However, in the majority of places such as doctor’s offices, schools, and even homes, the only type of hand sanitizer dispenser are the ones where you must press the top of the bottle with your hand in order to squeeze out the liquid, which defeats the purpose of “sanitizing.” Although there are many hands free dispensers with motion sensors, they can be expensive and harder to buy multiple. I designed a 3D printed foot operated dispenser using Fusion 360, with the additional parts only being a PVC pipe and a string. (July 27, 2020)</p>
                     <br>
-                    <img src = "https://media.giphy.com/media/L3X6DhAv4j5vqXxwsF/giphy.gif" width = 80% data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" class = "image" style = "transition:1s; max-width: 300px;">
+                    <img id = "https://media.giphy.com/media/L3X6DhAv4j5vqXxwsF/giphy.gif" src = "" width = 80% data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" class = "toload image" style = "transition:1s; max-width: 300px;">
                     
                     <br>
                     <br>

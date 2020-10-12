@@ -19,6 +19,14 @@ function typingOnLoad(){
     }
 }
 
+function loadFiles(){
+    var toLoad = document.getElementsByClassName( "toload" );
+    for ( var i = 0; i < toLoad.length; i++)
+    {
+        toLoad[i].setAttribute("src", toLoad[i].id);
+    }
+}
+
 function loadCad()
 {
     document.getElementById( "cad" ).style.display = "initial";
