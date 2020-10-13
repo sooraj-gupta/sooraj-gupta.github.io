@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: auto;
+  width: 100vw;
+}
+
+#wrapper {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+}
+
+.joystick {
+  background-color: blue;
+  border-radius: 100%;
+  cursor: pointer;
+  height: 50%;
+  user-select: none;
+  width: 50%;
+    
+    
+}
+
+    </style>
+    <script>
+        
+
+const  joystick = createJoystick(document.getElementById('wrapper'));        
+setInterval(() => document.getElementById('pos').innerHTML = "X: " + (joystick.getPosition().x) + ", Y:" +(-joystick.getPosition().y) , 100);
+setInterval(() => getSpeeds(), 100);
+        
+var speeds = {l:0, r:0};
+        
+function getSpeeds() {
+    var y = (-(joystick.getPosition().y)) * 2.55;
+    var x = 1 - Math.abs( joystick.getPosition().x / 100 );
+    var direction = joystick.getPosition().x / Math.abs( joystick.getPosition().x);
+    
+    if( direction > 0 ){
+        speeds.l = Math.ceil(y);
+        speeds.r = Math.ceil(y * x);
+    }
+    else if( direction < 0 ){
+        speeds.r = Math.ceil( y);
+        speeds.l = Math.ceil(y * x);
+    }
+    else{
+        speeds = {l: Math.ceil( y ) , r: Math.ceil(y)}; 
+    }
+    
+    
+    console.log(speeds)
+}
+
+
+        
+function createJoystick(parent) {
+  const maxDiff = 100;
+  let dragStart = null;
+  let currentPos = { x: 0, y: 0 };
+
+
+  window.onload = function(){
+    stick = document.getElementById("joystick")
+  stick.addEventListener('mousedown', handleMouseDown);
+  document.addEventListener('mousemove', handleMouseMove);
+  document.addEventListener('mouseup', handleMouseUp);
+  stick.addEventListener('touchstart', handleMouseDown);
+  document.addEventListener('touchmove', handleMouseMove);
+  document.addEventListener('touchend', handleMouseUp);
+  document.getElementById('wrapper').addEventListener('wheel', function(e) {
+
+        e.preventDefault();
+
+}, false);
+  document.getElementById('wrapper').addEventListener('touchmove', function(e) {
+
+        e.preventDefault();
+
+}, false);
+    
+  stick.style.transform = `translate3d(75px, 75px, 0px)`;
+  parent.appendChild(stick);
+  }
+
+  function handleMouseDown(event) {
+    stick.style.transition = '0s';
+    if (event.changedTouches) {
+      dragStart = {
+        x: event.changedTouches[0].clientX,
+        y: event.changedTouches[0].clientY,
+      };
+      return;
+    }
+    dragStart = {
+      x: event.clientX,
+      y: event.clientY,
+    };
+
+  }
+
+  function handleMouseMove(event) {
+    if (dragStart === null) return;
+    event.preventDefault();
+    if (event.changedTouches) {
+      event.clientX = event.changedTouches[0].clientX;
+      event.clientY = event.changedTouches[0].clientY;
+    }
+    const xDiff = event.clientX - dragStart.x;
+    const yDiff = event.clientY - dragStart.y;
+    const angle = Math.atan2(yDiff, xDiff);
+		const distance = Math.min(maxDiff, Math.hypot(xDiff, yDiff));
+		const xNew = distance * Math.cos(angle) + 75;
+		const yNew = distance * Math.sin(angle) + 75;
+    stick.style.transform = `translate3d(${xNew}px, ${yNew}px, 0px)`;
+    currentPos = { x: xNew-75, y: yNew-75 };
+  }
+
+  function handleMouseUp(event) {
+    if (dragStart === null) return;
+    stick.style.transition = '.2s';
+    stick.style.transform = `translate3d(75px, 75px, 0px)`;
+    dragStart = null;
+    currentPos = { x: 0, y: 0 };
+  }
+  return {
+    getPosition: () => currentPos,
+  };
+
+  
+}
+
+
+    </script>
+    
+    
+</head>
+<body>
+    <center>
+    <div id = "pos">    
+    </div>
+    </center>
+    <div id="main">
+      <div id="wrapper">
+          <div class = "joystick" id = "joystick">
+          </div>
+      </div>
+    </div>
+</body>
+</html>

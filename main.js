@@ -9,7 +9,7 @@ function typingOnLoad(){
     onLoad();
     if( window.innerWidth < 700 )
     {
-        typingObjects[0].fontSize = 38;
+        typingObjects[0].fontSize = 35;
         typingObjects[2].fontSize = 38;
     }
     

@@ -283,8 +283,14 @@ p{
         padding: 0px 20px;
     }
     .giant {
-        font-size: 35px; 
+        word-wrap: break-word;
+        font-size: 30px; 
         padding: 0px 15px;
+    }
+    p{
+        width: 80%;
+        max-width: 450px;
+        line-height: 32px;
     }
     .topnav{
         right: -5px;

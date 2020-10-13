@@ -1,0 +1,54 @@
+body{
+    margin:0;
+    padding:0;
+    
+  //overflow: hidden;  /* Hide scrollbars */
+}
+
+
+img {
+    
+}
+
+#arm {
+    height: 95%;
+}
+
+#armdiv {
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderrange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 5px;
+    background-color: lightgray;
+    margin: 10px 0px;
+    border-radius: 100px;
+}
+
+#sliders {
+    display: block;
+}
+
+.slider {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(100vh/8) 0px;
+}
+
+.sliderbutton {
+    background-color: orange;
+    border: 3px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
