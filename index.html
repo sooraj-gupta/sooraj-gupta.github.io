@@ -21,10 +21,18 @@
         <div>
             <center style = "padding: 0; margin: 0;">
                 <div class="topnav">
-                    <img id = "themebutton" src = "assets/darkmode.png" onclick="adjustTheme()"></img>
                     <!--<a class = "" onclick = "goTo('form.html')">Form</a>-->
-                    <a class= "active" onclick = "goTo('index.html')">Home</a>
+                    <a id = "menubutton" style = "font-weight: 500" class= "mobile active" onclick = "openMenu();">•••</a>
+                    <img id = "themebutton" src = "assets/darkmode.png" onclick="adjustTheme()">
+                    <a class= "desktop" onclick = "goTo('about.html')">About</a>
+                    <a class= "desktop" onclick = "goTo('index.html')">Home</a>
                 </div>
+                <div id = "menuwrapper">
+                        <div id = "menu">
+                            <a class= "mobile" onclick = "goTo('index.html')">Home</a>
+                            <a class= "mobile" onclick = "goTo('about.html')">About</a>
+                        </div>    
+                    </div>
                 <div  id = "background" style = " position: fixed;height:100vh; width:100%; background-color: var(--background); z-index: 1; display:flex; justify-content: center; align-items: center;">
                     <div style = "background-color: rgba(255,255,255,0)">
                         <a class = "button arrow" href = "https://github.com/sooraj-gupta/sooraj-gupta.github.io"><span class = "arrow">View On GitHub</span></a>
@@ -32,7 +40,7 @@
                         <br>
                         <a class = "button" href = "https://github.com/sooraj-gupta/" ><span class = "arrow">GitHub Profile</span></a></div>
                     </div>
-                <div  id = "main"style = "z-index: 100; position: relative; height:100vh; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; transition: 1s;">
+                <div  id = "main"style = "z-index: 1; position: relative; height:100vh; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; transition: 1s;">
                     
                     <div data-aos = "fade-up" style = "background-color: rgba(255,255,255,0)">
                         <div id = "titlecontainer" style = "background-color: transparent;" >
@@ -89,6 +97,8 @@
                     <br>
 
                     <img id = "https://media.giphy.com/media/jqFB0qmqX7vIBW1loC/giphy.gif" src = "" width = 70% data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="200" class = "toload image" style = "transition:1s; max-width: 450px;">
+                    <br>
+                    <br>
                     <br>
                     <p class = "font small" data-aos = "fade-up" data-aos-duration = "1000" data-aos-offset="100">Each slider ranges from 0 to 180. This webpage can be used to move each servo to a position within 0 to 180 degrees. (August 12, 2020)</p>
                 </div>

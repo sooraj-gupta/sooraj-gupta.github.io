@@ -70,19 +70,21 @@ html {
   /*animation: blink-cursor 1s step-end infinite, typing 5s steps(5, end) infinite;*/ }
 
 
-.topnav {
+.topnav{
   font-family: 'Roboto Mono';
   border: none;
   padding: 0px 0px;
   position: fixed;
   overflow: hidden;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
-  z-index: 1000;
-  transition: 1s; }
+  z-index: 10001;
+  transition: 1s; 
+}
 
-  .topnav a {
+
+  .topnav a, #menuwrapper a {
       
     float: right;
     text-align: center;
@@ -92,9 +94,10 @@ html {
     font-size: 17px;
     font-weight: 300;
     border: none;
-    transition: 1s; }
+    transition: 1s; 
+}
 
-    .topnav a:hover {
+    .topnav a:hover , #menuwrapper a:hover {
       color: var(--text);
       cursor: pointer;
       transition: 1s; }
@@ -109,7 +112,7 @@ html {
     font-weight: 300;
     border: none;
     transition: 1s; }
-  .topnav a.active {
+  .topnav a.active, , #menuwrapper a.active {
     color: var(--text);
     transition: 1s; }
 
@@ -263,6 +266,15 @@ p{
     padding: 0px 10vw;
 }
 
+.desktop
+{
+    display: initial;
+}
+.mobile
+{
+    display: none;
+}
+
 @media (max-width: 800px)
 {
     .big{
@@ -273,6 +285,36 @@ p{
     .giant {
         font-size: 35px; 
         padding: 0px 15px;
+    }
+    .topnav{
+        right: -5px;
+    }
+    #menuwrapper{
+        font-family: 'Roboto Mono';
+        border: none;
+        padding: 0px 0px;
+        position: fixed;
+        color: var(--text);
+        z-index: 10001;
+        position: fixed;
+        right:-90px;
+        top:2px;
+    }
+    #menu{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+    }
+    #menu a{
+        margin: 0px;
+        color: var(--text);
+    }
+    .desktop
+    {
+        display: none;
+    }
+    .mobile{
+        display: initial;
     }
 
 }

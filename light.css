@@ -8,6 +8,10 @@
 .topnav {
   background-color: #ffffc899; 
 }
+#menu a
+{
+    background-color: #ffffc899
+}
 .topnav a{
     color: #999;
 }

@@ -9,16 +9,30 @@ function typingOnLoad(){
     onLoad();
     if( window.innerWidth < 700 )
     {
-        typingObjects[0].fontSize = 40;    
+        typingObjects[0].fontSize = 38;
+        typingObjects[2].fontSize = 38;
     }
     
     for(var i = 0; i < typingObjects.length; i++ )
     {
-        
-        typing( typingObjects[i]);        
+        try{    
+            typing( typingObjects[i]); 
+        }       
+        catch( error )
+        {
+                
+        }
     }
 }
 
+var menuOpen = false;
+function openMenu(){
+    var menu = document.getElementById("menuwrapper");
+    menu.style.right = menuOpen ? "-90px" : "0px";
+    document.getElementsByClassName("topnav")[0].style.right = menuOpen ? "-5px" : "85px";
+    document.getElementById("menubutton").innerHTML = "•••"
+    menuOpen = !menuOpen;
+}
 function loadFiles(){
     onLoad();
     var toLoad = document.getElementsByClassName( "toload" );
@@ -56,7 +70,17 @@ var typingObjects = [
             "titleDuration": 3,
             "separator": ";",
             "fontSize": 20 
-        }
+        },
+        {
+            "message": "About;Me",
+            "array" : [],
+            "stage" : 0,
+            "id": "about",
+            "containerId": "aboutcontainer",
+            "titleDuration": 2.5,
+            "separator": ";",
+            "fontSize": 60
+        },
 ]
 
 function onLoad()
@@ -87,6 +111,8 @@ function onLoad()
 
 function typing( obj )
 {
+    document.getElementById( obj.id ).style.transitionDuration = "1s";
+    document.getElementById( obj.containerId ).style.transitionDuration = "1s";
     arrayize( obj );
     
     document.getElementById(obj.id).innerHTML = obj.array[0];
@@ -155,8 +181,6 @@ function adjustTheme(){
     setTheme();
 }
 function setTheme() {
-    document.getElementById( "titlecontainer" ).style.transitionDuration = "1s";
-    document.getElementById( "title" ).style.transitionDuration = "1s";
     if( dark ){
         document.getElementById("theme").setAttribute("href", "dark.css");
         document.cookie = "theme=dark";

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sooraj Gupta</title>
+        
+        <link rel = "stylesheet" href = "scroll/scroll.css">
+        <link rel = "stylesheet" href = "style.css">
+        <link id = "theme" rel = "stylesheet" href = "light.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Sooraj Gupta">
+        <meta property="og:description" content="A template website with animation">
+        <meta property="og:image" content="https://wallpapercave.com/wp/wp4490728.jpg">
+        <meta property="og:url" content="https://sooraj-gupta.github.io/animationtemplate/index.html">
+        <meta name="twitter:card" content="summary_large_image">
+        <script src = "main.js"></script>
+    </head>
+    
+    
+    <body onload = "loadFiles(); typingOnLoad(); ">
+        <div>
+            <center style = "padding: 0; margin: 0;">
+                <div class="topnav">
+                    <!--<a class = "" onclick = "goTo('form.html')">Form</a>-->
+                    <a id = "menubutton" style = "font-weight: 500" class= "mobile active" onclick = "openMenu();">•••</a>
+                    <img id = "themebutton" src = "assets/darkmode.png" onclick="adjustTheme()">
+                    <a class= "active desktop" onclick = "goTo('index.html')">Home</a>
+                    <a class= "desktop" onclick = "goTo('about.html')">About</a>
+                </div>
+                <div id = "menuwrapper">
+                        <div id = "menu">
+                            <a class= "active mobile" onclick = "goTo('index.html')">Home</a>
+                            <a class= "mobile" onclick = "goTo('about.html')">About</a>
+                        </div>    
+                    </div>
+                <div  id = "background" style = " position: fixed;height:100vh; width:100%; background-color: var(--background); z-index: 1; display:flex; justify-content: center; align-items: center;">
+                    <div style = "background-color: rgba(255,255,255,0)">
+                        <a class = "button arrow" href = "https://github.com/sooraj-gupta/sooraj-gupta.github.io"><span class = "arrow">View On GitHub</span></a>
+                        <br> 
+                        <br>
+                        <a class = "button" href = "https://github.com/sooraj-gupta/" ><span class = "arrow">GitHub Profile</span></a></div>
+                    </div>
+                <div  id = "main"style = "z-index: 1; position: relative; height:100vh; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; transition: 1s;">
+                    
+                    <div data-aos = "fade-up" style = "background-color: rgba(255,255,255,0)">
+                        <div id = "aboutcontainer" style = "background-color: transparent;" >
+                            <h1 class = "typewriter" id = "about">Sooraj Gupta's</h1>
+                        </div>
+                    </div>
+                </div>
+            <div style = "height: 100vh; background-color: rgba(255,255,255,0);position: relative; z-index: 0">
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style = "z-index:100;  position: relative; padding-top: 100px;">
+                
+
+                <div class = "footer">
+                    <div style="display: flex; flex-wrap: wrap; width:400px; justify-content: center; ">
+                        <div>
+                            <a id = "top" class = "button" style = "font-size: 25px; border-radius: 100px; padding: 5px 12px; padding-bottom: 0px; padding-top: 8px; height: 33px;" href = "#main">&#708;</a>
+
+                            <div id = "creditcontainer" style = "background-color: rgba(255,255,255,0)">
+                                <h1 style="font-size: 20px; height: 25px;" id = "credit" class = "typewriter">
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </center>
+        </div>
+
+    
+        
+        <script src = "scroll/scroll.js"></script>
+    </body>
+
+</html>
