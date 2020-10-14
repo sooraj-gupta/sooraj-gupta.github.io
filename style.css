@@ -322,5 +322,8 @@ p{
     .mobile{
         display: initial;
     }
+	#cad{
+		display: none;
+	}
 
 }
