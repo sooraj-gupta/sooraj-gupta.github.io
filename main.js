@@ -120,6 +120,7 @@ function typing( obj )
     setTitleAnimation( obj );
     setInterval( function() { return titleChange( obj ) }, obj.titleDuration*1000 );
 }
+
 function arrayize( obj )
 {
     var word = "";
