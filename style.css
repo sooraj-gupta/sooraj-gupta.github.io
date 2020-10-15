@@ -4,6 +4,11 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap";
 /* Change the color of links on hover */
 /* Add a color to the active/current link */
+
+:root
+{
+	--max-width: 80;
+}
 @keyframes blink-cursor {
   0% {
     border-color: var(--bg); }
@@ -262,8 +267,8 @@ button {
 p{
     line-height: 35px;
     text-align: left;
-    max-width: 650px;
-    padding: 0px 10vw;
+    //max-width: 1000px;
+    width: calc( 70vw - 25px );
 }
 
 .desktop
@@ -275,7 +280,31 @@ p{
     display: none;
 }
 
-@media (max-width: 800px)
+.splitview
+{
+	max-width: var(--max-width);
+	display: flex; 
+	flex-wrap: wrap; 
+	align-items: center; 
+	justify-content:center;
+	margin: 0px 50px;
+}
+.splitview p
+{
+	width: 40%;
+	margin: 0 25px;
+}
+.splitview img
+{
+	width: 30%;
+	margin: 0 25px;
+}
+
+.force{
+	padding: 10px;
+}
+
+@media (max-width: 1000px)
 {
     .big{
         font-weight: 300;
@@ -285,7 +314,7 @@ p{
     .giant {
         word-wrap: break-word;
         font-size: 30px; 
-        padding: 0px 15px;
+        padding: 20px 15px;
     }
     p{
         width: 80%;
@@ -324,6 +353,23 @@ p{
     }
 	#cad{
 		display: none;
+	}
+	.splitview
+	{
+		display: initial;
+		margin: 0px;
+	}
+	.splitview p
+	{
+		width: 80%;
+	}
+	.splitview img
+	{
+		max-width: 450px;
+		width: 80%;
+	}
+	.force{
+		padding: 0px
 	}
 
 }
