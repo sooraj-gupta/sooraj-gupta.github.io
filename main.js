@@ -1,8 +1,6 @@
 
 var dark = false;
 
-document.cookie = "theme=light";
-
 var thanks = false;
 
 function typingOnLoad(){
@@ -88,7 +86,7 @@ function onLoad()
     thanks = false;
     const query = window.location.search;
     const urlParams = new URLSearchParams(query);
-    const theme = urlParams.get('theme');
+    theme = urlParams.get('theme');
     const thankyou = urlParams.get('thanks');
     const name = urlParams.get('name');
     const email = urlParams.get('email');
@@ -103,7 +101,7 @@ function onLoad()
     }
     
     setTheme();
-    console.log(thankyou);
+    //console.log(thankyou);
     //console.log("titleStage: "+ titleStage);
     
 }
@@ -162,45 +160,68 @@ function titleChange( obj )
 }
 
 
-
-function getTheme(){
-    var x = document.cookie;
-    var themeIdx = x.indexOf("theme=");
-    var theme = x.substr(themeIdx+6,x.length);
-    if( theme == "light"){
-        dark = false;
-    }
-    if( theme == "dark" ){
-        dark = true;
-    }
-    //console.log(theme);
-    return theme;
-}
+var theme;
 function adjustTheme(){
     dark = !dark;
+	oppositeTheme();
     document.getElementById( "titlecontainer" ).style.transitionDuration = "1s";
     setTheme();
 }
+function oppositeTheme(){
+	for ( var i = 0; i < lightThemes.length; i++ )
+	{
+		if( lightThemes[i] == theme )
+		{
+			theme = darkThemes[i];
+			return;
+		}
+	}
+	for ( var i = 0; i < darkThemes.length; i++ )
+	{
+		if( darkThemes[i] == theme )
+		{
+			theme = lightThemes[i];
+			return;
+		}
+	}
+}
+
+
+var lightThemes = [ "light", "white", "green" ];
+var darkThemes = [ "dark", "black", "red" ];
+function validize( )
+{
+	console.log( theme );
+	for( var i = 0; i < lightThemes.length; i++ )
+	{
+		if( lightThemes[i] == theme )
+		{
+			dark = false;
+			return;
+		}
+		if( darkThemes[i] == theme )
+		{
+			dark = true;
+			return;
+		}
+	}
+		
+	theme = "light";
+	dark = false;
+}
+
 function setTheme() {
+	validize();
+	document.getElementById("theme").setAttribute("href", theme+".css");
     if( dark ){
-        document.getElementById("theme").setAttribute("href", "dark.css");
-        document.cookie = "theme=dark";
         document.getElementById("themebutton").setAttribute("src", "assets/lightmode.png");
-        console.log(getTheme());
-        if( !thanks )
-        {
-            window.history.replaceState(null, null, "?theme=dark");
-        }
     }
-    else if ( !dark ){
-        document.getElementById("theme").setAttribute("href", "light.css");
-        document.cookie = "theme=light";
+    else {
         document.getElementById("themebutton").setAttribute("src", "assets/darkmode.png");
-        console.log(getTheme());
-        if( !thanks )
-        {
-            window.history.replaceState(null, null, "?theme=light");
-        }
+    }
+	if( !thanks )
+	{
+		window.history.replaceState(null, null, "?theme="+theme);
     }
     //console.log(x);
 }
@@ -208,10 +229,10 @@ function goTo( target )
 {
     if( dark )
     {
-        window.location = target + "?theme=dark"
+        window.location = target + "?theme="+ theme;
     }
     else{
-        window.location = target + "?theme=light"
+        window.location = target + "?theme=" + theme;
     }
 }
 function $(id) {
@@ -223,8 +244,7 @@ function getInput()
     thanks = true;
     var email = $("email").value;
     var name = $("name").value;
-    var darkString = ( dark ) ? "dark" : "light";
-    window.location = "thanks.html?theme=" + darkString + "&name="+name + "&email=" + email+"&thanks=true";
+    window.location = "thanks.html?theme=" + theme + "&name="+name + "&email=" + email+"&thanks=true";
 }
 function thankYouPage( name, email ){
     $("first").innerHTML = "Thank you for your submission "+ name + ".";
