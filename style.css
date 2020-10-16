@@ -11,11 +11,11 @@
 }
 @keyframes blink-cursor {
   0% {
-    border-color: var(--bg); }
+    border-color: transparent}
   50% {
     border-color: var(--text); }
   100% {
-    border-color: var(--bg); } }
+    border-color: transparent; } }
 @keyframes typing {
   0% {
     width: 100%; }
