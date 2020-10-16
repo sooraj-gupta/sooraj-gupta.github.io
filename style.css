@@ -273,7 +273,7 @@ p{
 
 .desktop
 {
-    display: initial;
+    display: block;
 }
 .mobile
 {
@@ -289,11 +289,18 @@ p{
 	justify-content:center;
 	margin: 0px 50px;
 }
-.splitview p
+.splitview div 
 {
 	width: 40%;
 	margin: 0 25px;
+
 }
+.splitview div p
+{
+	width: 100%;
+	//margin: 0 25px;
+}
+
 .splitview img
 {
 	width: 30%;
@@ -349,7 +356,7 @@ p{
         display: none;
     }
     .mobile{
-        display: initial;
+        display: block;
     }
 	#cad{
 		display: none;
@@ -359,9 +366,14 @@ p{
 		display: initial;
 		margin: 0px;
 	}
-	.splitview p
+	.splitview div
 	{
 		width: 80%;
+		margin: 0px;
+	}
+	.splitview div p
+	{
+		margin: 0px;
 	}
 	.splitview img
 	{
