@@ -311,6 +311,14 @@ p{
 	padding: 10px;
 }
 
+
+.web
+{
+	width: calc( 70vw - 25px );
+	height: 90vh;
+}
+
+
 @media (max-width: 1000px)
 {
     .big{
@@ -324,10 +332,14 @@ p{
         padding: 20px 15px;
     }
     p{
-        width: 80%;
-        max-width: 450px;
+        width: 85%;
+        //max-width: 450px;
         line-height: 32px;
     }
+	.web
+	{
+		width: 85%;
+	}
     .topnav{
         right: -5px;
     }
