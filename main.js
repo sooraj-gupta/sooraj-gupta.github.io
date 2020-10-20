@@ -28,7 +28,7 @@ function openMenu(){
     var menu = document.getElementById("menuwrapper");
     menu.style.right = menuOpen ? "-90px" : "0px";
     document.getElementsByClassName("topnav")[0].style.right = menuOpen ? "-5px" : "85px";
-    document.getElementById("menubutton").style.transform = !menuOpen ? "rotate(-90deg)" : "rotate(0deg)";
+    document.getElementById("menubutton").style.transform = !menuOpen ? "rotate(-270deg)" : "rotate(0deg)";
     menuOpen = !menuOpen;
 }
 function loadFiles(){

@@ -353,6 +353,8 @@ p{
         position: fixed;
         right:-90px;
         top:2px;
+		background-color: var(--bg);
+		height: 100vh;
     }
     #menu{
         display: flex;
