@@ -212,7 +212,7 @@ function validize( )
 
 function setTheme() {
 	validize();
-	document.getElementById("theme").setAttribute("href", theme+".css");
+	document.getElementById("theme").setAttribute("href", "css/"+theme+".css");
     if( dark ){
         document.getElementById("themebutton").setAttribute("src", "assets/lightmode.png");
     }
