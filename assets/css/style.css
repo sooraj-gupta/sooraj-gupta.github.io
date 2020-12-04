@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/** MAIN **/
+*{
+	font-family: 'Lato';
+}
+
+body,html {
+	margin: 0;
+	padding: 0;
+}
+
+/*** TITLE **/
+#nav {
+	width: 100%;
+	height: 100px;
+	background-color: var(--light);
+	color: var(--mainbg);
+	display: flex;
+	align-items: center;
+}
+
+#navlogoimg
+{
+	height: 40px;
+	margin: 0 20px;
+	margin-right: 0px;
+	margin-left: calc( 5vw + 10px );
+}
+
+#navlogotext
+{
+	font-size: 35px;
+	margin: 0 20px;
+	float: left;
+	font-weight: 700;
+}
+
+.navitem
+{
+	float:right;
+	margin: 0 20px;
+	padding: 10px 0;
+	font-weight: 900;
+}
+
+#titlewrapper {
+	height: 100vh;
+	width: 100%;
+}
+
+#titlediv {
+	height: calc( 100% - 100px );
+	//background-color: var(--light);
+	background-image: linear-gradient( var(--light), var(--mainbg) );
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#title {
+	width: 70%;
+	color: var( --maintext );
+	font-size: 100px;
+	margin-left: calc( 5vw + 25px );
+	padding-right: 40px;
+	font-weight: 300;
+}
+
+#title h1 {
+	font-size: 100px;
+	margin: 0px;
+	padding: 0;
+	font-weight: 300;
+	margin-bottom: -30px;
+}
+
+a {
+	margin-bottom: -100px;
+}
+
+#sooraj {
+	max-width: calc( 25% + 100px );
+	border-radius: 50%;
+	margin-right: calc( 5vw + 25px );
+}
+
+#title h6 {
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	font-weight: 300;
+	color: var(--maintext);
+	position: absolute;
+	top: calc( 2px + 25vh );
+	left: calc( 5vw + 30px );
+}
