@@ -18,6 +18,7 @@
 	background-color: var(--accent);
 	border-radius: 40px;
 	border: 3px solid var(--accent);
+	margin-left: 20px;
 }
 .button-round:hover
 {
@@ -30,6 +31,9 @@
 {
 	[class *= "button-"]
 	{
-		
+	}
+	.button-round
+	{
+		margin-left: 0;
 	}
 }

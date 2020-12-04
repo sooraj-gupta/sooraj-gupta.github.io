@@ -1,8 +1,12 @@
 :root
 {
 	--light: #b6e2f2;
+	--light-alpha: #b6e2f2aa;
 	--lightdark: #4e90a5;
+	--lightdark-alpha: #4e90a5aa;
 	--maintext: #000;
 	--mainbg: #fff;
+	--mainbg-alpha: #ffffffaa;
 	--accent: #db571f;
+	--accent-alpha: #db571faa;
 }

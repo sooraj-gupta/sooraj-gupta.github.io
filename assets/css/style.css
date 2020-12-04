@@ -75,7 +75,7 @@ body,html {
 	margin: 0px;
 	padding: 0;
 	font-weight: 300;
-	margin-bottom: -35px;
+	margin-bottom: -20px;
 	text-decoration-line: underline;
 	text-decoration-color: var(--accent);
 	text-decoration-skip: objects;
@@ -87,6 +87,7 @@ a {
 
 #sooraj {
 	max-width: calc( 25% + 100px );
+	width: calc( 25% + 100px );
 	border-radius: 50%;
 	margin-right: calc( 5vw + 25px );
 }
@@ -115,7 +116,14 @@ a {
 	margin-left: 15px;
 }
 
-
+#buttons 
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start; 
+	align-items: center; 
+	height: 100px;
+}
 
 .header {
 	font-size: 60px;
@@ -189,6 +197,42 @@ p {
 	font-weight: 400;
 }
 
+#shapes {
+	width: 20vw;
+	height: 20vw; 
+	position: absolute;
+	right: calc( 30vw - 200px );
+}
+
+#circle1 {
+	position: absolute;
+	width: 15vw;
+	height: 15vw; 
+	border-radius: 50%; 
+	background-color: var(--accent-alpha);
+	bottom: 0;
+	right: 0;
+}
+
+#circle2 {
+	position: absolute;
+	width: 10vw;
+	height: 10vw; 
+	border-radius: 50%; 
+	background-color: var(--lightdark-alpha);
+}
+
+#circle3 {
+	position: absolute;
+	width: 5vw;
+	height: 5vw; 
+	border-radius: 50%; 
+	right: 0;
+	top: 4vw;
+	background-color: var(--mainbg-alpha);
+}
+
+
 /**  MEDIA QUERIES **/
 @media ( max-width: 800px )
 {
@@ -235,10 +279,6 @@ p {
 		justify-content: center;
 		align-items: center;
 	}
-	#viewgithub
-	{
-		display: none;
-	}
 	.navitem
 	{
 		margin: 30px 0;
@@ -250,7 +290,15 @@ p {
 	#title h1
 	{
 		font-size: 80px;
+		margin-bottom: -30px
 	}
-	
+	#buttons
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start; 
+		align-items: center; 
+		height: 100px;
+		width: 200px;
+	}
 }
-
