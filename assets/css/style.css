@@ -39,11 +39,11 @@ body,html {
 .navitem
 {
 	float:right;
-	margin: 0 20px;
-	padding: 10px 0;
+	margin: 10px 20px;
+	padding-top: 10px;
 	font-weight: 900;
+	border-bottom: 2px solid var(--accent);
 }
-
 #titlewrapper {
 	height: 100vh;
 	width: 100%;
