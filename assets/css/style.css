@@ -5,18 +5,22 @@
 /** MAIN **/
 *{
 	font-family: 'PT Sans';
+	transition: 0.2s;
 }
 
 body,html {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
+	background-color: var(--mainbg);
+	transition: 0s;
 }
 body
 {
 	transition: 0.9s;
 	display: none;
 	opacity: 0;
+	transition: 0;
 }
 
 /*** TITLE **/
@@ -27,6 +31,7 @@ body
 	color: var(--mainbg);
 	display: flex;
 	align-items: center;
+	transition: 0s;
 }
 
 #navlogoimg
@@ -62,9 +67,11 @@ body
 	height: calc( 100% - 100px );
 	//background-color: var(--light);
 	background-image: linear-gradient( var(--light), var(--mainbg) );
+	transition: 0;
 	width: 100%;
 	display: flex;
 	align-items: center;
+	//justify-content: center;	
 }
 
 #title {
