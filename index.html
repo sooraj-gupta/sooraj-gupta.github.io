@@ -4,6 +4,7 @@
 
 	<head>
 		<title>Sooraj Gupta</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="assets/css/colors/default.css" rel = "stylesheet">
 		<link href = "assets/css/style.css" rel = "stylesheet">
@@ -13,24 +14,33 @@
 	<body>
 		<!--  TITLE  -->
 		<section id = "titlewrapper">
+			<!-- Navigation Menu-->
 			<div id = "nav">
 				<img src = "assets/images/logo.png" id = "navlogoimg">
-				<div style = "width: 10%;">
-					<!--<a id = "navlogotext">Sooraj Gupta</a>-->
-				</div>
-				<div style = "width: 90%;">
+
+				<div style = "width: 100%;" class = "desktop">
 					<a class = "button-round navitem" style = "margin-right: calc( 5vw + 10px );">GITHUB</a>
 					<a class = "button- navitem" href = "contact">CONTACT</a>
 					<a class = "button- navitem" href = "https://sooraj-gupta.github.io/">HOME</a>
 				</div>
 			</div>
+			
+			<!-- Mobile Menu -->
+			<span id = "mobilemenubutton" >&middot;&middot;&middot;</span>
+			<div id = "mobilemenu" class = "mobile">
+				<a class = "button- navitem" href = "https://sooraj-gupta.github.io/">HOME</a>
+				<a class = "button- navitem" href = "contact">CONTACT</a>
+				<a class = "button-round navitem">GITHUB</a>
+			</div>
+			
+			<!-- Landing Page -->
 			<div id = "titlediv">
 				<div id = "title">
 					<h6>Hello! I'm</h6>
 					<h1>Sooraj Gupta</h1>
-					<a class = "button-round">Github Profile</a>&nbsp;<a class = "button-round">View on Github</a>
+					<a class = "button-round">Github Profile</a><a class = "button-round" id = "viewgithub">View on Github</a>
 				</div>
-				<img src = "assets/images/sooraj.jpg" id = "sooraj">
+				<img src = "assets/images/sooraj.jpg" id = "sooraj" class = "desktop">
 			</div>
 		</section>
 		
@@ -38,6 +48,7 @@
 		
 		
 		<script src = "assets/typewriter/typewriter.js"></script>
+		<script src = "assets/js/main.js"></script>
 	</body>
 
 </html>

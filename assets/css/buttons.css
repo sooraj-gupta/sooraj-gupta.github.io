@@ -24,17 +24,12 @@
 	background-color: transparent;
 	color: var(--accent);
 }
-.button-round-bg
+
+
+@media (max-width: 800px )
 {
-	padding: 6px 20px;
-	color: var(--accent);
-	background-color: var(--mainbg);
-	border-radius: 40px;
-	border: 4px solid var(--mainbg);
-}
-.button-round-bg:hover
-{
-	color: var(--mainbg);
-	background-color: var(--light);
-	border: 4px solid var(--mainbg);
+	[class *= "button-"]
+	{
+		
+	}
 }
