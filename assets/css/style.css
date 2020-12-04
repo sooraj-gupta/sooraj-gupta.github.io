@@ -73,6 +73,9 @@ body,html {
 	padding: 0;
 	font-weight: 300;
 	margin-bottom: -30px;
+	text-decoration-line: underline;
+	text-decoration-color: var(--accent);
+	text-decoration-skip: objects;
 }
 
 a {
@@ -95,3 +98,4 @@ a {
 	top: calc( 2px + 25vh );
 	left: calc( 5vw + 30px );
 }
+
