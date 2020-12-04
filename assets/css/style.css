@@ -78,7 +78,6 @@ body,html {
 	margin-bottom: -20px;
 	text-decoration-line: underline;
 	text-decoration-color: var(--accent);
-	text-decoration-skip: objects;
 }
 
 a {
