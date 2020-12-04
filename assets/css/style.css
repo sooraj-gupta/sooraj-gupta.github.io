@@ -14,7 +14,7 @@ body,html {
 }
 body
 {
-	transition: 0.5s;
+	transition: 0.9s;
 	display: none;
 	opacity: 0;
 }
