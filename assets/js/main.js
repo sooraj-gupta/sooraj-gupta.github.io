@@ -19,3 +19,12 @@ document.getElementById( "mobilemenubutton" ).onclick = function()
 	}
 	menuOpen = !menuOpen;
 }
+
+var themes = ["default.css", "yellowpurple.css", "redgreen.css"];
+var theme = 0;
+document.getElementById( "brush" ).onclick = function()
+{
+	theme++;
+	if ( theme == themes.length ) theme = 0;
+	document.getElementById("theme").setAttribute( "href", "assets/css/colors/" + themes[theme]);
+}
