@@ -172,6 +172,7 @@ footer {
 }
 
 .content {
+	position: relative;
 	max-width: 900px;
 	width: calc( 90vw - 60px);
 }
@@ -244,6 +245,20 @@ p {
 	background-color: var(--mainbg-alpha);
 }
 
+#t1 {
+	fill: #222222dd;
+	stroke-width: 0;
+}
+
+#p1 {
+	fill: white;
+	stroke-width: 0;
+}
+#d1 {
+	fill: #22222277
+}
+	
+
 
 /**  MEDIA QUERIES **/
 @media ( max-width: 800px )
@@ -313,4 +328,10 @@ p {
 		height: 100px;
 		width: 200px;
 	}
+
+}
+
+#svg-container {
+	position: absolute;
+	top:0;
 }
