@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 /** MAIN **/
 *{
-	font-family: 'PT Sans';
+	font-family: 'Rubik';
 	transition: 0.2s;
+}
+i
+{
+	transition: 0s;
 }
 
 body,html {
@@ -87,21 +91,24 @@ body
 	font-size: 100px;
 	margin: 0px;
 	padding: 0;
-	font-weight: 300;
-	margin-bottom: -20px;
+	font-weight: 400;
 	text-decoration-line: underline;
 	text-decoration-color: var(--accent);
 }
 
-a {
-	margin-bottom: -100px;
+.subheader a {
+	text-decoration: none;
+	color: black;
+}
+.subheader a:hover {
+	text-decoration: none;
+	color: var(--lightdark);
 }
 
 #sooraj {
-	max-width: calc( 25% + 100px );
-	width: calc( 25% + 100px );
+	max-width: 100%;
+	width: 100%;
 	border-radius: 50%;
-	margin-right: calc( 5vw + 25px );
 }
 
 #title h6 {
@@ -148,11 +155,15 @@ a {
 #armandcar {
 	padding: 80px 0px;
 }
+#javascript {
+	padding: 60px 0px;
+}
 
 hr {
 	border-style: solid;
 	border-width: 1px;
-	width: calc( 90vw - 60px);
+	width: calc( 100vw - 60px);
+	max-width: 1000px;
 	color: var(--lightdark);
 }
 
@@ -174,12 +185,11 @@ footer {
 .content {
 	position: relative;
 	max-width: 900px;
-	width: calc( 90vw - 60px);
+	width: calc( 100vw - 60px);
 }
 
 .content img {
 	width: 100%;
-	border: 4px solid var(--accent);
 }
 
 .subtitle {
@@ -204,9 +214,9 @@ footer {
 }
 
 p {
-	font-family: "PT Serif";
+	font-family: "Playfair Display";
 	text-align: left;
-	font-size: 20px;
+	font-size: calc( 0.5vw + 13px );
 	font-weight: 400;
 }
 
@@ -259,7 +269,10 @@ p {
 }
 	
 
-
+#soorajdiv {
+	max-width: calc( 25% + 100px );
+	padding-right: calc( 5vw + 25px );
+}
 /**  MEDIA QUERIES **/
 @media ( max-width: 800px )
 {
@@ -316,8 +329,8 @@ p {
 	}
 	#title h1
 	{
-		font-size: 80px;
-		margin-bottom: -30px
+		font-size: 70px;
+		margin-bottom:30px
 	}
 	#buttons
 	{
@@ -328,10 +341,46 @@ p {
 		height: 100px;
 		width: 200px;
 	}
-
+	
+	#sooraj
+	{
+		display: none;
+	}
+	.header {
+		font-size: 50px;
+	}
+	.subheader {
+		font-size: 30px;
+	}
+	#armandcar,#javascript
+	{
+		padding: 0;
+	}
 }
 
 #svg-container {
 	position: absolute;
 	top:0;
+}
+
+.fa-link {
+	font-size: 30px;
+}
+
+iframe {
+	max-width: 900px;
+	width: calc( 100vw - 60px);
+	height: 90vh;
+	border: none;
+	box-shadow: 0px 0px 10px #00000011;
+}
+
+#inline {
+	text-decoration: underline;
+	color: var(--lightdark-alpha)
+}
+#inline:hover
+{
+	color: var( --lightdark );
+	cursor: pointer;
 }

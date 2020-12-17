@@ -58,9 +58,9 @@ class Typewriters
 								  	  }  );
 					all[i].innerHTML = "";
 				}
-				//all[i].style.fontSize = all[i].hasAttribute( "data-typewriter-fontsize" ) ? all[i].getAttribute("data-typewriter-fontsize") : settings.fontsize;
-				//all[i].style.fontFamily = all[i].hasAttribute( "data-typewriter-font" ) ? all[i].getAttribute("data-typewriter-font") : settings.font;
-				//all[i].style.fontWeight = all[i].hasAttribute( "data-typewriter-fontweight" ) ? all[i].getAttribute("data-typewriter-fontweight") : settings.fontweight;
+				all[i].style.fontSize = all[i].hasAttribute( "data-typewriter-fontsize" ) ? all[i].getAttribute("data-typewriter-fontsize") : settings.fontsize;
+				all[i].style.fontFamily = all[i].hasAttribute( "data-typewriter-font" ) ? all[i].getAttribute("data-typewriter-font") : settings.font;
+				all[i].style.fontWeight = all[i].hasAttribute( "data-typewriter-fontweight" ) ? all[i].getAttribute("data-typewriter-fontweight") : settings.fontweight;
 				all[i].style.minWidth = "1px";
 				all[i].style.paddingRight = "1px";
 				
