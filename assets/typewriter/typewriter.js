@@ -13,7 +13,7 @@ function include( file )
 	scr.type = 'text/javascript'; 
 	document.getElementsByTagName('body').item(0).appendChild(scr); 
 }
-include( 'typewriter/settings.js' );
+include( 'assets/typewriter/settings.js' );
 setTimeout( function(){
-	include( 'typewriter/master.js' );
+	include( 'assets/typewriter/master.js' );
 }, 100 ); 

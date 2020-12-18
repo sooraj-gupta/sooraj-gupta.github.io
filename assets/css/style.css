@@ -273,10 +273,98 @@ p {
 	max-width: calc( 25% + 100px );
 	padding-right: calc( 5vw + 25px );
 }
+
+
+#svg-container {
+	position: absolute;
+	top:0;
+}
+
+.fa-link {
+	font-size: 30px;
+}
+
+iframe {
+	max-width: 900px;
+	width: calc( 100vw - 60px);
+	height: 90vh;
+	border: none;
+	box-shadow: 0px 0px 8px 10px #00000011;
+}
+
+#inline {
+	text-decoration: underline;
+	color: var(--lightdark-alpha)
+}
+#inline:hover
+{
+	color: var( --lightdark );
+	cursor: pointer;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: left;
+	width: 100%;
+}
+
+label {
+	font-size: 18px;
+	font-weight: 700;
+}
+input, textarea
+{
+	border-radius: 0px;
+	outline: none;
+	border-width: 0px;
+	border-bottom: 2px solid var(--accent);
+	color: var(--lightdark);
+	width: 100%;	
+	font-size: 23px;
+	resize: none;
+	padding: 15px 0px;
+}
+form .sec
+{
+	margin: 20px 0px;
+	width: 100%;
+	display: flex; justify-content: center; align-items: center; flex-wrap: nowrap; width: 100%;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ddd;
+}
+
+#name {
+	margin-bottom: 20px; margin-right: 40px; width: 80%;
+}
+
+#email {
+	margin-bottom: 20px; width: 100%;
+}
+
 /**  MEDIA QUERIES **/
 @media ( max-width: 800px )
 {
 	/****/
+	form
+	{
+		width: 80%;
+		margin: 60px 0;
+	}
+	form .sec
+	{
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	#name
+	{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;	
+	}
 	.desktop {
 		display: none;
 	}
@@ -297,8 +385,8 @@ p {
 		right: 1em;
 		color: var(--maintext);
 		font-size: 35px;
+		font-weight: 100;
 		transition: 0.2s;
-		transform-origin: 0.415em 0.69em;
 		user-select: none;
 	}
 	#mobilemenubutton:hover
@@ -356,31 +444,4 @@ p {
 	{
 		padding: 0;
 	}
-}
-
-#svg-container {
-	position: absolute;
-	top:0;
-}
-
-.fa-link {
-	font-size: 30px;
-}
-
-iframe {
-	max-width: 900px;
-	width: calc( 100vw - 60px);
-	height: 90vh;
-	border: none;
-	box-shadow: 0px 0px 10px #00000011;
-}
-
-#inline {
-	text-decoration: underline;
-	color: var(--lightdark-alpha)
-}
-#inline:hover
-{
-	color: var( --lightdark );
-	cursor: pointer;
 }
