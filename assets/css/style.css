@@ -22,8 +22,8 @@ body,html {
 body
 {
 	transition: 0.9s;
-	display: none;
-	opacity: 0;
+	//display: none;
+	opacity: 1;
 	transition: 0;
 }
 
@@ -444,4 +444,12 @@ form .sec
 	{
 		padding: 0;
 	}
+}
+
+#librariesicon {
+	width: 30%;
+	height: 20vw; 
+	
+	margin-right: calc( 10vw );
+	font-size: calc( 18vw + 50px );
 }

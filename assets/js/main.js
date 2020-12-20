@@ -1,6 +1,6 @@
-document.body.style.display = "block";
-setTimeout( function(){ document.body.style.opacity = "1"; }, 10);
-setTimeout( function(){ document.body.style.transition = "0"; }, 500);
+//document.body.style.display = "block";
+//setTimeout( function(){ document.body.style.opacity = "1"; }, 10);
+//setTimeout( function(){ document.body.style.transition = "0"; }, 500);
 
 var menuOpen = false;
 document.getElementById( "mobilemenubutton" ).onclick = function()
