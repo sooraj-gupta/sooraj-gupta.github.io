@@ -56,11 +56,20 @@ body
 
 .navitem
 {
+	position: relative;
 	float:right;
 	margin: 10px 20px;
 	padding-top: 10px;
 	font-weight: 900;
 	border-bottom: 2px solid var(--accent);
+}
+.desktop .navitem
+{
+	border-bottom: none;
+}
+.desktop .button-round
+{
+	border-bottom: 3px solid var(--accent);
 }
 #titlewrapper {
 	height: 100vh;
@@ -70,13 +79,15 @@ body
 #titlediv {
 	height: calc( 100% - 100px );
 	//background-color: var(--light);
-	background-image: linear-gradient( var(--light), var(--mainbg) );
 	transition: 0;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	//justify-content: center;	
+	background-image: linear-gradient( var(--light), var(--mainbg) );
 }
+#titlediv
+
 
 #title {
 	width: 70%;
@@ -109,7 +120,51 @@ body
 	max-width: 100%;
 	width: 100%;
 	border-radius: 50%;
+	animation: jiggle 1s infinite;
 }
+@keyframes jiggle
+{
+	0%{
+		transform: rotate(-1deg);
+	}
+	50%{
+		transform: rotate(1deg);
+	}
+	100%
+	{
+		transform: rotate(-1deg);
+	}
+}
+
+
+.attent
+{
+	animation: attent 4s infinite;
+}
+@keyframes attent
+{
+	0%,100%, 44%,54% {
+		transform: scale(1) rotate(0deg);
+	}
+	46%{
+		transform: scale(1) rotate(-3deg);
+	}
+	48%{
+		transform: scale(1) rotate(3deg);
+	}
+	50%{
+		transform: scale(1) rotate(-3deg);
+	}
+	52%{
+		transform: scale(1) rotate(3deg);
+	}
+	100%{
+		transform: scale(1) rotate(0deg);
+	}
+	
+}
+
+
 
 #title h6 {
 	margin: 0;
@@ -123,7 +178,7 @@ body
 }
 
 .desktop {
-	display: initial;
+	display: block;
 }
 .mobile
 {
@@ -196,7 +251,7 @@ footer {
 	
 	font-size: 20px;
 	color: var(--lightdark);
-	font-weight: 900;
+	font-weight: 800;
 	text-align: left;
 	margin: 0px;
 	margin-bottom: 60px;
