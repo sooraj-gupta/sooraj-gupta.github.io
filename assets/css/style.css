@@ -22,8 +22,8 @@ body,html {
 body
 {
 	transition: 0.9s;
-	//display: none;
-	opacity: 1;
+	display: none;
+	opacity: 0;
 	transition: 0;
 }
 
@@ -98,11 +98,11 @@ body
 
 .subheader a {
 	text-decoration: none;
-	color: black;
+	color: var(--accent);
 }
 .subheader a:hover {
 	text-decoration: none;
-	color: var(--lightdark);
+	color: var(--accentdark);
 }
 
 #sooraj {
