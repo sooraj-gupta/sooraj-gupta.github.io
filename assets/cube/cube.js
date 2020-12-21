@@ -20,7 +20,7 @@ function load()
 	var i = 0;
 	var rotations = 0;
 	move();
-	setInterval( move, 600 );
+	setInterval( move, 750 );
 	function move()
 	{
 		if( i == sides.length )
@@ -51,9 +51,11 @@ function load()
 		document.getElementsByClassName( "loading" )[0].style.opacity = "0";
 		setTimeout( function () { document.getElementsByClassName("loading")[0].style.display = "none"}, 300 );
 		document.body.style.overflow = "visible";
-	}, settingsCube.rotations * 800 );
+	}, settingsCube.rotations * 900 );
 }
 init();
+
+setInterval( () => {location.reload();}, 6000)
 document.body.onload = function()
 {
 	//document.getElementsByClassName("wrapper")[0].style.display = "inline-block";
