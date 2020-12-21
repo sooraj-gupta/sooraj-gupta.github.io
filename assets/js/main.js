@@ -25,7 +25,7 @@ document.getElementById( "mobilemenubutton" ).onclick = function()
 }
 
 var themes = ["default.css", "yellowpurple.css", "redgreen.css", "tangreen.css", "blackyellow.css"];
-var theme = 0;
+var theme = 2;
 document.getElementById( "brush" ).onclick = function()
 {
 	theme++;
