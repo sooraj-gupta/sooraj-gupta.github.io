@@ -1,4 +1,4 @@
-document.body.style.display = "block";
+document.body.style.display = "inline-block";
 setTimeout( function(){ document.body.style.opacity = "1"; }, 10);
 setTimeout( function(){ document.body.style.transition = "0"; }, 500);
 

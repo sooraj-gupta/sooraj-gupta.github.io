@@ -8,12 +8,11 @@
 		
 		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="assets/css/colors/redgreen.css" rel = "stylesheet" id = "theme">
-		<link href = "https://sooraj-gupta.github.io/jaroosui/jaroos.css" rel = "stylesheet">	
-		<link href = "assets/css/style.css" rel = "stylesheet">
 		<link href="assets/css/buttons.css" rel = "stylesheet">
 		<link href = "assets/typewriter/typewriter.css" rel = "stylesheet">
-		
+		<link href="assets/css/colors/redgreen.css" rel = "stylesheet" id = "theme">
+		<link href = "../jaroosui/jaroos.css" rel = "stylesheet">	
+		<link href = "assets/css/style.css" rel = "stylesheet">
 		
 		
 		<meta property="og:title" content="Sooraj Gupta">
@@ -48,7 +47,8 @@
 				<!--<img src = "assets/images/logo.png" id = "navlogoimg">-->
 
 				<div style = "width: 100%;" class = "desktop">
-					<a class = "button-round navitem" style = "margin-right: calc( 5vw + 10px );">GITHUB</a>
+<!--					<a class = "button-round navitem" style = "margin-right: calc( 5vw + 10px );">GITHUB</a>-->
+					<button class = "halfrot navitem" style = "margin-right: calc( 5vw );" data-jaroos-orientation>GITHUB;Visit my</button>
 					<button class = "underline navitem" id = "brush" data-jaroos-orientation="reverse mid half"><i class="fa fa-paint-brush"></i></button>
 					<button class="underline navitem" href="contact" data-jaroos-orientation="reverse mid half">CONTACT</button>
 					<button class="underline navitem attent" href="projects" data-jaroos-orientation="reverse mid half">libraries</button>
@@ -73,7 +73,9 @@
 					<h6>Hello! I'm</h6>
 					<h1>Sooraj Gupta</h1>
 					<div id = "buttons">
-						<a class = "button-round" style = "margin-left: 0;" href = "projects">My Projects</a><a class = "button-round" href = "https://github.com/sooraj-gupta">GitHub</a>
+						<a class = "button-round mobile" style = "margin-left: 0;" href = "projects">Projects</a><a class = "button-round mobile" href = "https://github.com/sooraj-gupta">GitHub</a>
+						<button class="desktop hinge" href="projects" data-jaroos-orientation="reverse">projects;Check it out!</button>
+						<button class="hinge desktop" href="https://github.com/sooraj-gupta" data-jaroos-orientation="">GITHUB;profile</button>
 					</div>
 				</div>
 				<div id  = "soorajdiv">
@@ -105,8 +107,7 @@
 		
 		
 		
-		<script src = "assets/typewriter/typewriter.js"></script>
-		<script src = "https://sooraj-gupta.github.io/jaroosui/jaroos.js"></script>
+		<script src = "../jaroosui/jaroos.js"></script>
 		<script src = "assets/js/main.js"></script>
 	</body>
 

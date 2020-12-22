@@ -21,10 +21,8 @@ body,html {
 }
 body
 {
-	transition: 0.9s;
-	display: none;
 	opacity: 0;
-	transition: 0;
+	transition: 0.5s;
 }
 
 /*** TITLE **/
@@ -58,8 +56,6 @@ body
 {
 	position: relative;
 	float:right;
-	margin: 10px 20px;
-	padding-top: 10px;
 	font-weight: 900;
 	border-bottom: 2px solid var(--accent);
 }
@@ -196,7 +192,7 @@ body
 	flex-wrap: wrap;
 	justify-content: flex-start; 
 	align-items: center; 
-	height: 100px;
+	height: 50px;
 }
 
 .header {
@@ -423,6 +419,33 @@ form .sec
 	//bottom: 1px;
 	height: 2px;
 }
+.hinge, .hinge:hover
+{
+	margin-right: 20px;
+}
+.hinge .hingescene .face, .halfrotscene .fig .title
+{
+	background-color: var(--accent);
+	font-size: 15px;
+	font-weight: 900;
+}
+.hinge .hingescene .fig .msg
+{
+	font-size: 12px;
+}
+
+.hinge .hingescene:hover .fig .title
+{
+	background-color: var(--accentdark);
+	font-size: 15px;
+	font-weight: 900;
+}
+.halfrotscene .fig .msg
+{
+	background-color: var(--accentlight);
+	font-size: 15px;
+	font-weight: 900;
+}
 
 
 
@@ -499,7 +522,6 @@ form .sec
 	#title h1
 	{
 		font-size: 70px;
-		margin-bottom:30px
 	}
 	#buttons
 	{
