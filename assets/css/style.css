@@ -234,7 +234,7 @@ footer {
 
 
 .footernav {
-	border-bottom: 2px solid var(--accent);
+	margin: 0px;
 }
 
 .content {
@@ -399,6 +399,32 @@ form .sec
 #email {
 	margin-bottom: 20px; width: 100%;
 }
+
+
+:root
+{
+	--mainunderline: var(--accent);
+}
+.underline, .underline:focus
+{
+	padding-top: 11px;
+	margin: 0px 20px; 
+	margin-top: 3px;
+	font-size: 15px;
+	font-weight: 700;
+}
+.forward.underline:after
+{
+	//bottom: 1px;
+	height: 2px;
+}
+.reverse.underline:after
+{
+	//bottom: 1px;
+	height: 2px;
+}
+
+
 
 /**  MEDIA QUERIES **/
 @media ( max-width: 800px )

@@ -5,13 +5,15 @@
 	<head>
 		<title>Sooraj Gupta</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
 		<link href="assets/css/colors/redgreen.css" rel = "stylesheet" id = "theme">
+		<link href = "https://sooraj-gupta.github.io/jaroosui/jaroos.css" rel = "stylesheet">	
 		<link href = "assets/css/style.css" rel = "stylesheet">
 		<link href="assets/css/buttons.css" rel = "stylesheet">
 		<link href = "assets/typewriter/typewriter.css" rel = "stylesheet">
 		<link href = "assets/clipboard/clipboard.css" rel = "stylesheet"/>
+		
 		<meta property="og:title" content="Sooraj Gupta">
         <meta property="og:description" content="Sooraj Gupta's Personal Website.">
 		<meta property="description" content="Sooraj Gupta's Personal Website.">
@@ -43,11 +45,11 @@
 
 				<div style = "width: 100%;" class = "desktop">
 					<a class = "button-round navitem" style = "margin-right: calc( 5vw + 10px );">GITHUB</a>
-					<a class  = "button- navitem" id = "brush"><i class="fa fa-paint-brush"></i><div class = "navunder"></div></a>
-					<a class = "button- navitem" href = "contact">CONTACT<div class = "navunder"></div></a>
-					<a class = "button- navitem" href = "libraries">LIBRARIES<div class = "navunder"></div></a> 
-					<a class = "button- navitem" href = "projects">PROJECTS<div class = "navunder"></div></a>
-					<a class = "button- navitem" href = "https://sooraj-gupta.github.io/">HOME<div class = "navunder"></div></a>
+					<button class = "underline navitem" id = "brush" data-jaroos-orientation="reverse mid half"><i class="fa fa-paint-brush"></i></button>
+					<button class="underline navitem" href="contact" data-jaroos-orientation="reverse mid half">CONTACT</button>
+					<button class="underline navitem attent" href="projects" data-jaroos-orientation="reverse mid half">libraries</button>
+					<button class="underline navitem" href="projects" data-jaroos-orientation="reverse mid half">projects</button>
+					<button class="underline navitem" href="https://sooraj-gupta.github.io" data-jaroos-orientation="reverse mid half">Home</button>
 				</div>
 			</div>
 			
@@ -153,7 +155,12 @@
 		<hr>
 		<footer>
 			
-			<div><a class = "button- footernav" href = "home">HOME</a><a class = "button- footernav" style="margin-left: 20px;" href = "projects">PROJECTS</a><a class = "button- footernav" style="margin-left: 20px;" href = "contact">CONTACT</a></div>
+			<div style = "line-height: 35px">
+				<a class = "button- footernav" href = "home">HOME</a>
+				<a class = "button- footernav" style="margin-left: 20px;" href = "projects">PROJECTS</a>
+				<a class = "button- footernav" style="margin-left: 20px;" href = "libraries">LIBRARIES</a>
+				<a class = "button- footernav" style="margin-left: 20px; padding-top: 100px;" href = "contact">CONTACT</a>
+			</div>
 			<br>
 			<br>
 			<!--<span style = "font-size: 20px; color: var(--lightdark)">Thank you for visiting my page!</span>-->
@@ -168,6 +175,7 @@
 		
 		
 		<script src = "assets/typewriter/typewriter.js"></script>
+		<script src = "https://sooraj-gupta.github.io/jaroosui/jaroos.js"></script>
 		<script src = "assets/clipboard/clipboard.js"></script>
 		<script>Clipboard.init()</script>
 		<script src = "assets/js/main.js"></script>
