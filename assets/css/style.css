@@ -454,8 +454,17 @@ form .sec
 	background-color: var(--accentlight);
 	font-size: 15px;
 	font-weight: 700;
-	border-bottom-right-radius: 2px;
-	border-bottom-left-radius: 2px;
+}
+
+.halfrot .halfrotscene:hover .msg
+{
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+.halfrot .halfrotscene:hover .title
+{
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
 }
 
 
