@@ -8,5 +8,7 @@
 	--mainbg: #111;
 	--mainbg-alpha: #111111aa;
 	--accent: #ffdf6C;
+	--accentdark: #e5c13e;
+	--accentlight: #f8e18c;
 	--accent-alpha: #ffdf6Caa;
 }

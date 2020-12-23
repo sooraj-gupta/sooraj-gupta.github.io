@@ -8,11 +8,11 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
 		<link href="assets/css/colors/redgreen.css" rel = "stylesheet" id = "theme">
-		<link href = "https://sooraj-gupta.github.io/jaroosui/jaroos.css" rel = "stylesheet">	
-		<link href = "assets/css/style.css" rel = "stylesheet">
 		<link href="assets/css/buttons.css" rel = "stylesheet">
 		<link href = "assets/typewriter/typewriter.css" rel = "stylesheet">
 		<link href = "assets/clipboard/clipboard.css" rel = "stylesheet"/>
+		<link href = "assets/jaroosui/jaroos.css" rel = "stylesheet">	
+		<link href = "assets/css/style.css" rel = "stylesheet">
 		
 		<meta property="og:title" content="Sooraj Gupta">
         <meta property="og:description" content="Sooraj Gupta's Personal Website.">
@@ -44,7 +44,8 @@
 				<!--<img src = "assets/images/logo.png" id = "navlogoimg">-->
 
 				<div style = "width: 100%;" class = "desktop">
-					<a class = "button-round navitem" style = "margin-right: calc( 5vw + 10px );">GITHUB</a>
+<!--					<a class = "button-round navitem" style = "margin-right: calc( 5vw + 10px );">GITHUB</a>-->
+					<button class = "halfrot navitem" style = "margin-right: calc( 5vw );" data-jaroos-orientation href = "https://github.com/sooraj-gupta/">GITHUB;Visit my</button>
 					<button class = "underline navitem" id = "brush" data-jaroos-orientation="reverse mid half"><i class="fa fa-paint-brush"></i></button>
 					<button class="underline navitem" href="contact" data-jaroos-orientation="reverse mid half">CONTACT</button>
 					<button class="underline navitem attent" href="projects" data-jaroos-orientation="reverse mid half">libraries</button>
@@ -58,26 +59,28 @@
 			<div id = "mobilemenu" class = "mobile">
 				<a class = "button- navitem" href = "https://sooraj-gupta.github.io/">HOME</a>
 				<a class = "button- navitem" href = "projects" >PROJECTS</a>
-				<a class = "button- navitem" href = "libraries">LIBRARIES</a>
+				<a class = "button- navitem attent" href = "libraries">LIBRARIES</a>
 				<a class = "button- navitem" href = "contact">CONTACT</a>
-				<a class = "button-round navitem">GITHUB</a>
+				<a class = "button-round navitem" href = "https://github.com/sooraj-gupta">GITHUB</a>
 			</div>
 			
 			<!-- Landing Page -->
 			<div id = "titlediv" style = "height: calc( 30vh + 100px ) ">
-					<div id = "title">
-						<h1>Libraries</h1>
-						<div id = "buttons">
-							<a class = "button-round" style = "margin-left: 0;">My Projects</a><a class = "button-round" >Github</a>
-						</div>
+				<div id = "title">
+					<h1>Libraries</h1>
+					<div id = "buttons">
+						<a class = "button-round mobile" style = "margin-left: 0;" href = "projects">Projects</a><a class = "button-round mobile" href = "https://github.com/sooraj-gupta">GitHub</a>
+						<button class="desktop hinge" href="projects" data-jaroos-orientation="reverse">projects;Check it out!</button>
+						<button class="hinge desktop" href="https://github.com/sooraj-gupta" data-jaroos-orientation="">GITHUB;profile</button>
 					</div>
-					<div id = "librariesicon" class = "desktop">
-						<div style = "position: relative; ">
-							<i class="fa fa-book" style="color: var(--accent-alpha); position: absolute; top: -10px; left: -10px;    "></i>
-							<i class="fa fa-book" style="color: var(--lightdark-alpha); position: absolute; top: 0.5em; left: 0.5em; font-size: 0.75em;"></i>
-							<i class="fa fa-book" style="color: var(--mainbg-alpha); position: absolute; top: 0.5em; left: 1.5em; font-size: 0.5em;"></i>
-						</div>
+				</div>
+				<div id = "librariesicon" class = "desktop">
+					<div style = "position: relative; ">
+						<i class="fa fa-book" style="color: var(--accent-alpha); position: absolute; top: -10px; left: -10px;    "></i>
+						<i class="fa fa-book" style="color: var(--lightdark-alpha); position: absolute; top: 0.5em; left: 0.5em; font-size: 0.75em;"></i>
+						<i class="fa fa-book" style="color: var(--mainbg-alpha); position: absolute; top: 0.5em; left: 1.5em; font-size: 0.5em;"></i>
 					</div>
+				</div>
 			</div>
 		</section>
 		<br>
@@ -175,7 +178,7 @@
 		
 		
 		<script src = "assets/typewriter/typewriter.js"></script>
-		<script src = "https://sooraj-gupta.github.io/jaroosui/jaroos.js"></script>
+		<script src = "assets/jaroosui/jaroos.js"></script>
 		<script src = "assets/clipboard/clipboard.js"></script>
 		<script>Clipboard.init()</script>
 		<script src = "assets/js/main.js"></script>

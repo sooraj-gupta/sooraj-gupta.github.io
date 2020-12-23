@@ -22,7 +22,7 @@ body,html {
 body
 {
 	opacity: 0;
-	transition: 0.5s;
+	transition: 0.9s;
 }
 
 /*** TITLE **/
@@ -400,6 +400,7 @@ form .sec
 :root
 {
 	--mainunderline: var(--accent);
+	--mainunderlinetext: var(--maintext);
 }
 .underline, .underline:focus
 {
@@ -427,7 +428,8 @@ form .sec
 {
 	background-color: var(--accent);
 	font-size: 15px;
-	font-weight: 900;
+	font-weight: 700;
+	color: var( --mainbg );
 }
 .hinge .hingescene .fig .msg
 {
@@ -435,16 +437,16 @@ form .sec
 }
 
 .hinge .hingescene:hover .fig .title
-{
+{ 
 	background-color: var(--accentdark);
 	font-size: 15px;
-	font-weight: 900;
 }
 .halfrotscene .fig .msg
 {
+	color: var( --mainbg );
 	background-color: var(--accentlight);
 	font-size: 15px;
-	font-weight: 900;
+	font-weight: 700;
 }
 
 
