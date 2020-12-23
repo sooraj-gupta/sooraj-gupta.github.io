@@ -430,10 +430,13 @@ form .sec
 	font-size: 15px;
 	font-weight: 700;
 	color: var( --mainbg );
+	border-radius: 5px;
 }
 .hinge .hingescene .fig .msg
 {
 	font-size: 12px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
 }
 
 .hinge .hingescene:hover .fig .title
@@ -441,12 +444,18 @@ form .sec
 	background-color: var(--accentdark);
 	font-size: 15px;
 }
+.halfrotscene, .halfrotscene:hover
+{
+	margin-left: 10px;
+}
 .halfrotscene .fig .msg
 {
 	color: var( --mainbg );
 	background-color: var(--accentlight);
 	font-size: 15px;
 	font-weight: 700;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
 }
 
 
