@@ -1,0 +1,40 @@
+*
+{
+	font-family: 'Rubik';
+}
+
+body,html
+{
+	margin: 0;
+	padding: 0;
+}
+h1, h2,h3
+{
+	font-weight: 200;
+	width: 100%;
+	font-size: 35px;
+	text-align: center;
+}
+h1
+{
+	font-weight: 700;
+	padding-top: 20px;
+	font-size: 65px;
+}
+section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px 0px;
+}
+hr {
+	width: 90%;
+	border:none;
+	border-bottom: 1px solid #aaa;
+}
+
+h3 {
+	font-size: 25px;
+	padding: 0px 0px;
+}
